@@ -1,6 +1,7 @@
-// Import stylesheets
-import './style.css';
+import {ApplicationComponent} from './src/app.component';
+
 
 // Write TypeScript code!
-const appDiv: HTMLElement = document.getElementById('app');
-appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
+const appRoot: HTMLElement = document.createElement('div');
+
+ApplicationComponent.initialize(appRoot);
