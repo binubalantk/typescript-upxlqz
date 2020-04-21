@@ -1,3 +1,12 @@
-# typescript-upxlqz
+# React - Typescript application
+##### Author: Binu Balan <support@binubalan.com>
+**Usage**
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/typescript-upxlqz)
+```
+git clone https://github.com/binubalantk/typescript-upxlqz.git
+
+cd typescript-upxlqz
+
+npm install
+```
+

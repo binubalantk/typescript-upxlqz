@@ -1,11 +1,11 @@
 import React from 'react';
 
 interface IAPageProps{
-  ServiceController
+  title: string
 }
 
 interface IAPageStates{
-
+  currentSub: number;
 }
 
 export class APage<P extends IAPageProps, S extends IAPageStates> extends React.Component<P,S>{

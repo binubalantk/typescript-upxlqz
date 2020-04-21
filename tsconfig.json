@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "downlevelIteration": false,
+    // true -> ensures correct iteration over strings "char of 'string'" with unicode characters (as long as target === 'es5')
+    // false -> ensures faster iteration (support of arrays only)
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "inlineSources": true,
+    // emit source along the source maps
+    "jsx": "react",
+    "sourceMap": true,
+    // for us developers it is always a nice to have
+    "strict": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "target": "es5",
+    "outDir": "dist",
+    "strictPropertyInitialization": false,
+    "lib": [
+      "dom",
+      "es6"
+    ],
+    "types": [
+      "jest"
+    ]
+  },
+  "include": [
+    "./src/**/*",
+    "tests/**/*.ts"
+  ],
+  "exclude": [
+    "dist",
+    "publish",
+    "node_modules"
+  ]
+}

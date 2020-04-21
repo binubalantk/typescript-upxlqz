@@ -1,0 +1,95 @@
+{
+  "extends": [
+    "tslint:recommended"
+  ],
+  "rules": {
+    "align": [
+      true,
+      "elements",
+      "members",
+      "statements"
+    ],
+    "eofline": false,
+    "indent": [
+      true,
+      "tabs",
+      4
+    ],
+    "interface-over-type-literal": false,
+    "linebreak-style": [
+      true,
+      "CRLF"
+    ],
+    "max-line-length": [
+      true,
+      160
+    ],
+    "member-access": false,
+    "no-bitwise": false,
+    "no-console": true,
+    "no-conditional-assignment": false,
+    "no-namespace": false,
+    "no-trailing-whitespace": true,
+    "no-unused-expression": false,
+    "object-literal-shorthand": false,
+    "object-literal-sort-keys": false,
+    "one-line": [
+      true,
+      "check-catch",
+      "check-finally",
+      "check-else"
+    ],
+    "one-variable-per-declaration": false,
+    "ordered-imports": false,
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "radix": false,
+    "semicolon": [
+      true,
+      "always"
+    ],
+    "switch-default": false,
+    "trailing-comma": [
+      true,
+      {
+        "esSpecCompliant": true
+      }
+    ],
+    "variable-name": false,
+    "whitespace": false,
+    "array-type": [
+      true,
+      "array"
+    ],
+    "ban-types": [
+      true,
+      [
+        "Function",
+        "Avoid using the `Function` type. Prefer a specific function type, like `() => void`."
+      ]
+    ],
+    "comment-format": false,
+    "forin": true,
+    "jsdoc-format": [
+      true,
+      "check-multiline-start"
+    ],
+    "max-classes-per-file": [
+      true,
+      1
+    ],
+    "member-ordering": false,
+    "no-angle-bracket-type-assertion": true,
+    "no-any": true,
+    "no-empty-interface": true,
+    "object-literal-key-quotes": [
+      true,
+      "as-needed"
+    ],
+    "prefer-const": true,
+    "prefer-for-of": true
+  },
+  "defaultSeverity": "warning"
+}
