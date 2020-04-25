@@ -1,21 +1,23 @@
-import React from 'react';
+import React, {ReactNode} from 'react';
 
-interface IAPageProps{
+export interface IAPageProps{
   title: string
 }
 
-interface IAPageStates{
+export interface IAPageStates{
   currentSub: number;
 }
 
-export class APage<P extends IAPageProps, S extends IAPageStates> extends React.Component<P,S>{
+export abstract class APage<P extends IAPageProps, S extends IAPageStates> extends React.Component<P,S>{
   constructor(iprops: P){
     super(iprops);
   }
 
   render(){
     return (<div>
-      asd
+      {this.renderPage()}
     </div>);
   }
+
+  public abstract renderPage(): ReactNode;
 }

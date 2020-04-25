@@ -1,6 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
 const env = require('./env');
@@ -10,16 +9,14 @@ module.exports = [
     {
         mode: 'development',
         entry: {
-            ["application"]: './src/index.ts'
+            applicaiton: './src/index.ts'
         },
         resolve: {
             extensions: ['.ts', '.tsx', '.html', '.js', '.json']
         },
         output: {
             path: path.resolve(distPath),
-            filename: "bundle_" + env.versionStringLong + ".js",
-            library: '',
-            libraryTarget: "umd"
+            filename: "bundle_" + env.versionStringLong + ".js"
         },
         target: 'web',
         plugins: [
